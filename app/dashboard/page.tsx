@@ -161,7 +161,7 @@ export default async function DashboardPage() {
                         <p className="mb-3 text-sm uppercase tracking-[0.24em] text-slate-500">Strong Areas</p>
                         <div className="flex flex-wrap gap-2">
                           {(concept.strong_areas || []).length > 0 ? (
-                            concept.strong_areas.map((item, index) => (
+                            concept.strong_areas.map((item: string, index: number) => (
                               <span
                                 key={`strong-${index}`}
                                 className="rounded-full bg-emerald-500/10 px-3 py-1 text-sm text-emerald-200"
@@ -178,7 +178,7 @@ export default async function DashboardPage() {
                         <p className="mb-3 text-sm uppercase tracking-[0.24em] text-slate-500">Weak Areas</p>
                         <div className="flex flex-wrap gap-2">
                           {(concept.weak_areas || []).length > 0 ? (
-                            concept.weak_areas.map((item, index) => (
+                            concept.weak_areas.map((item: string, index: number) => (
                               <span
                                 key={`weak-${index}`}
                                 className="rounded-full bg-red-500/10 px-3 py-1 text-sm text-red-200"
@@ -195,7 +195,7 @@ export default async function DashboardPage() {
                         <p className="mb-3 text-sm uppercase tracking-[0.24em] text-slate-500">Next Steps</p>
                         <div className="flex flex-wrap gap-2">
                           {(concept.next_steps || []).length > 0 ? (
-                            concept.next_steps.map((item, index) => (
+                            concept.next_steps.map((item: string, index: number) => (
                               <span
                                 key={`next-${index}`}
                                 className="rounded-full bg-sky-500/10 px-3 py-1 text-sm text-sky-200"
